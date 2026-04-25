@@ -1,0 +1,49 @@
+/* Telegram Pulse Animation */
+@keyframes pulse-animation {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(37, 99, 235, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
+}
+
+.animate-pulse-blue {
+    animation: pulse-animation 2s infinite;
+}
+
+/* Custom Game Card Styles */
+.game-card {
+    background-color: #1f2937; /* Gray-800 */
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid #374151; /* Gray-700 */
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.game-card:hover {
+    border-color: #eab308; /* Yellow-500 */
+    transform: translateY(-5px);
+}
+
+.game-logo {
+    width: 4rem; /* 64px */
+    height: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.75rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.btn-register {
+    margin-top: 0.5rem;
+    display: block;
+    background-color: #eab308; /* Yellow-500 */
+    color: black;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    text-decoration: none;
+}
